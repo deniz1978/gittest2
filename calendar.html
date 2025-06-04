@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .calendar {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .calendar-header {
+            background: #4a90e2;
+            color: #fff;
+            padding: 16px;
+            text-align: center;
+            font-size: 1.4em;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-auto-rows: 80px;
+        }
+        .day,
+        .header-day {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e0e0e0;
+        }
+        .header-day {
+            background: #fafafa;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar">
+        <div class="calendar-header">Dezember 2024</div>
+        <div class="calendar-grid">
+            <div class="header-day">Mo</div>
+            <div class="header-day">Di</div>
+            <div class="header-day">Mi</div>
+            <div class="header-day">Do</div>
+            <div class="header-day">Fr</div>
+            <div class="header-day">Sa</div>
+            <div class="header-day">So</div>
+
+            <!-- Example week layout -->
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+
+            <!-- Weitere Tage können hier ergänzt werden -->
+        </div>
+    </div>
+</body>
+</html>
